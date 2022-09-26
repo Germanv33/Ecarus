@@ -1,0 +1,131 @@
+.slide_container
+    border-radius: 24px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 100%
+    overflow: hidden    
+    position: relative
+    @media  (max-width: 479px)
+        flex-direction: column
+        width: 100vw
+        border-radius: 0px
+        
+.left_text_side
+    height: 100%
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    margin-left: 64px
+    z-index: 1
+
+    @media (min-width: 480px) and (max-width: 767px)
+        width: 75%
+        margin-left: 32px
+
+    @media  (max-width: 479px)
+        width: 343px
+        margin-left: 0px
+        padding: 0px 16px
+
+    h1
+        margin-top: 0px
+        margin-bottom: 16px
+        font-family: 'Inter'
+        font-style: normal
+        font-weight: 700
+        font-size: 48px
+        line-height: 56px
+        color: #000B26
+        @media  (max-width: 479px)
+            font-size: 24px
+
+
+    h2
+        margin: 0px
+        font-family: 'Inter'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        color: rgba(0, 11, 38, 0.8)
+
+        @media (min-width: 1200px) 
+            padding-bottom: 10%
+
+        @media (min-width: 992px) and (max-width: 1199px) 
+            padding-bottom: 10%
+
+        @media (min-width: 768px) and (max-width: 991px)
+            padding-bottom: 15%
+        
+        @media (min-width: 480px) and (max-width: 767px)
+            padding-bottom: 17%
+
+        @media  (max-width: 479px)
+            margin-bottom: 24px
+    a
+        display: inline-block
+        position: absolute
+        margin-left: 0px
+        bottom: 10%
+        text-align: center
+        @media  (max-width: 479px)
+            position: relative
+            bottom: 0
+           
+    button
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        padding: 12px 24px
+        gap: 10px
+        
+        height: 48px
+
+        background: #07C88E
+        border-radius: 8px
+        font-family: 'Inter'
+        font-style: normal
+        font-weight: 500
+        font-size: 16px
+        line-height: 24px
+        /* identical to box height, or 150% */
+
+        display: flex
+        align-items: center
+        letter-spacing: -0.25px
+        border: none
+
+        /* Background/White */
+
+        color: #FFFFFF
+        @media  (max-width: 479px)
+            width: 343px
+            text-align: center
+
+
+.right_img_side
+    
+    overflow: hidden
+    @media (min-width: 480px) and (max-width: 767px)
+        position: absolute
+        z-index: 0
+        left: calc(100% - 230px)
+    height: 100%
+    max-width: 100%
+    width: 440px
+    @media (min-width: 992px) and (max-width: 1199px) 
+        width: 55%
+    @media (min-width: 768px) and (max-width: 991px)
+        width: 727px
+   
+    img
+        object-fit: cover
+        width: 440px
+        height: 100%
+        @media (min-width: 480px) and (max-width: 767px)
+            width: 100%
+        @media  (max-width: 479px)
+            width: 100vw

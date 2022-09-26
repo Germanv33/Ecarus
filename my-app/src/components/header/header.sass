@@ -1,0 +1,132 @@
+.container
+    max-width:  1200px
+    display: flex
+    margin: auto
+    @media (min-width: 1200px) 
+        max-width: 1200px
+        margin: auto
+    
+    @media (min-width: 992px) and (max-width: 1199px) 
+        max-width: 992px
+    
+    @media (min-width: 768px) and (max-width: 991px)
+        max-width: 768px
+
+    @media (min-width: 480px) and (max-width: 767px)
+        max-width: 480px
+
+    @media (min-width: 320px) and (max-width: 479px)
+        max-width: 343px
+
+    @media (max-width: 320px) 
+        max-width: 320px
+
+
+.full_header_container
+    max-width: 100%
+    box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.12)
+    overflow: hidden
+    
+    
+.header
+    display: flex
+    height: 70px
+    align-items: center
+    width: 100%
+    .header_phone_button
+        display: none
+
+.header__menu
+    display: flex
+    justify-content: space-between
+    width: inherit
+    @media screen and (max-width: 767px) 
+        justify-content: end
+        .header_phone_button
+            display: block
+            margin-left: 23px
+
+.menu
+    
+    display: flex
+    margin-left: 4%
+
+    flex-wrap: wrap
+    justify-content: space-between
+    .active
+        span
+            border-bottom: 4px solid #07C88E
+            z-index: 0
+    .first
+        margin-left: 0px
+    
+    @media screen and (max-width: 768px) 
+        display: none
+
+.menu_link
+    color: #000B26
+    margin-left: 24px
+    @media screen and (max-width: 768px) 
+        margin-left: 12px
+    
+
+
+.menu_item
+    white-space: nowrap
+    height: 70px
+    display: flex
+    align-items: center
+    
+    
+
+.header_span
+    font-weight: 400
+    font-size: 14px
+    line-height: 18px
+
+.right_side
+    display: flex
+    justify-content: space-between
+    
+
+    
+.header_button
+    justify-content: space-between
+    background: transparent
+    border: 0px solid #0099CC
+    align-items: center
+    display: flex
+    cursor: pointer
+    padding: 0
+    padding-right: 6px
+    margin-right: 0px
+
+.header_svg
+    margin-right: 11%
+
+.city
+    @media screen and (max-width: 768px) 
+        display: none
+
+.header_phone_button
+    align-items: center
+    display: flex
+    justify-content: center
+    margin-right: 15px
+
+.burger_svg
+    width: 33px
+    height: 33px
+
+.logo
+    margin-left: 0px
+
+.city
+    margin-right: 20px
+    @media screen and (max-width: 768px) 
+        margin-right: 20px
+    
+    
+
+
+

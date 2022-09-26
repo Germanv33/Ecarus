@@ -1,0 +1,174 @@
+// @media (min-width: 1200px) 
+
+
+
+// @media (min-width: 992px) and (max-width: 1199px) 
+
+
+// @media (min-width: 768px) and (max-width: 991px) 
+
+
+// @media (min-width: 480px) and (max-width: 767px) 
+
+
+// @media (min-width: 320px) and (max-width: 479px) 
+
+
+// @media (max-width: 320px) 
+    
+.full_container
+    max-width: 100%
+
+.main_container
+
+    margin: 0 auto
+
+    @media (min-width: 1200px) 
+        max-width: 1200px
+        margin: auto
+    
+    @media (min-width: 992px) and (max-width: 1199px) 
+        max-width: 992px
+    
+    @media (min-width: 768px) and (max-width: 991px)
+        max-width: 768px
+
+    @media (min-width: 480px) and (max-width: 767px)
+        max-width: 480px
+
+    @media (min-width: 320px) and (max-width: 479px)
+        max-width: 343px
+
+    @media (max-width: 320px) 
+        max-width: 320px
+
+
+.hero_cards
+    width: 100%
+    display: flex
+    justify-content: space-between
+    margin-top: 48px
+    z-index: 1
+    position: relative
+
+    @media  (max-width: 991px)
+        flex-direction: column
+
+    @media  (max-width: 479px)
+        margin-top: 0px
+        width: 343px
+    
+.left_card, .right_card
+    position: relative
+    width: 49%
+    background: #FFFFFF
+    border: 1px solid rgba(18, 34, 88, 0.12)
+    border-radius: 16px
+    display: flex
+    // align-items: center
+    overflow: hidden
+
+    @media  (max-width: 991px)
+        width: 100%
+    @media (max-width: 479px)
+        flex-direction: column
+   
+
+
+.right_card
+
+    @media  (max-width: 991px)
+        margin-top: 20px
+
+.left_card
+    .left_side_card
+
+        @media (min-width: 992px) and (max-width: 1199px) 
+            width: 45%
+
+.left_side_card
+    
+    margin-left: 40px
+
+    @media (min-width: 992px) and (max-width: 1199px) 
+        width: 75%
+    
+    @media (min-width: 320px) and (max-width: 479px)
+        width: 75%
+
+    @media (max-width: 479px)
+        width: 75%
+        margin-left: 20px
+
+    h1
+        margin: 0
+        margin-top: 20px
+        margin-bottom: 14px
+        font-family: 'Inter'
+        font-style: normal
+        font-weight: 600
+        font-size: 32px
+        line-height: 40px
+        color: #000B26
+        @media (max-width: 479px)
+            font-size: 24px
+    h3
+        margin-top: 0px
+        // margin-bottom: 46px
+        font-family: 'Inter'
+        font-style: normal
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        color: rgba(0, 11, 38, 0.56)
+        max-height: 140px
+        @media (max-width: 479px)
+            margin-bottom: 0px
+
+    .arrow_button
+        position: absolute
+        bottom: 20px
+        height: 48px
+        width: 48px
+        background: rgba(62, 80, 114, 0.08)
+        border-radius: 8px
+        background-position: center !important
+        background: rgba(62, 80, 114, 0.08) url(../../svg/main/right-arrow.svg) no-repeat 
+
+        a
+            max-width: 48px
+            margin-left: 0px
+            text-decoration: none
+            position: relative
+            margin-top: 0px
+            margin-bottom: 0px
+            width: 48px
+            background: rgba(62, 80, 114, 0.08)
+            border-radius: 8px
+      
+            img
+                position: absolute
+                width: 13.5px
+                height: 13.5px
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+
+.right_side_card
+
+    @media (min-width: 992px) and (max-width: 1199px) 
+        width: 35%
+
+    @media  (max-width: 991px) and (min-width: 480px)
+        max-width: 47%
+
+    @media  (max-width: 479px)
+        img
+            height: 150px
+        display: flex
+        justify-content: right
+        width: 100%
+
+    max-width: 100%
+    
+ 
